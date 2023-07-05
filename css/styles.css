@@ -1,0 +1,187 @@
+/* En este archivo escriban su CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Fonts */
+/* Importar aquí la font */
+
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    line-height: 1.2;
+    font-size: 18px;
+    padding: 20px;
+    text-align: justify;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+    scroll-behavior: smooth;
+}
+ul {
+    list-style: none;
+}
+
+header{
+    size: 90px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgb(163, 163, 163);
+    text-align: right;
+    align-items: center;
+    max-width: 100%;
+    background-color: #3b83bd;
+    
+ }
+
+  .menu-button {
+    font-size: 24px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    display: none;
+
+  }
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+header ul{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+   
+header li{
+    margin-right: 30px;
+    }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+main {
+    max-width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 55px;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+}
+H2{
+    font-size: 32px;
+    text-align: center;
+}
+
+.Circular{
+    align-items: center;
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    justify-content: center;
+    
+
+}
+
+.Descarga {
+    background-color: #3b83bd ;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 9px;
+    font-size: 20px;
+    cursor: pointer;
+    align-items: center;
+    background-color: blue;
+    transition: background-color 0.3s ease;
+}
+.ul{ 
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button[type="download"]:hover{
+   background-color: #3b83bd;
+   border-radius: 12px; 
+   color:aqua;
+ }
+
+article{
+    background-color: #e4cfdc ;
+    box-sizing: border-box;
+    padding: 20px; 
+   }
+
+.Logos {
+    height: 175px;
+    width: 175px;
+    padding: 15px;
+}
+
+   footer{
+background-color:  #3b83bd;
+justify-content: center;
+text-align: center; 
+   }
+   .abrir-menu{
+    display: none;
+   }
+
+@media (max-width: 768px) {
+    
+    .navbar {
+        background-color: #f2f2f2;
+        padding: 5px;
+      }
+      
+      .menu-button {
+        font-size: 24px;
+        cursor: pointer;
+        display: inline-block;
+        padding: 5px;
+      }
+      
+      .menu {
+        display: none;
+        list-style-type: none;
+        padding: 0;
+      }
+      
+      .menu li {
+        padding: 10px;
+      }
+      
+      .menu li a {
+        text-decoration: none;
+        color: #333;
+      }
+      
+      input[type="checkbox"] {
+        display: none;
+      }
+      
+      input[type="checkbox"]:checked ~ .menu {
+        display: block;
+      }
+      
+}
